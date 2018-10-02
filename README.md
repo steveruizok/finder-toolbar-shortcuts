@@ -2,7 +2,7 @@
 
 A collection of shortcuts for the Finder toolbar.
 
-<div style="text-align: center; width: 100%; max-width: 900px"><img src="http://github.com/steveruizok/finder-toolbar-shortcuts/images/screenshot.png"/></div>
+<div style="text-align: center; width: 100%; max-width: 900px"><img src="https://github.com/steveruizok/finder-toolbar-shortcuts/blob/master/images/screenshot.png?raw=true"/></div>
 
 ## Table of Contents
 
