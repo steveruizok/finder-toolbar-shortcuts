@@ -32,6 +32,8 @@ If you'd like to remove these shortcuts:
 - Click the `>_` shortcut to open the current folder in Terminal.
 - Or Click the `</>` shortcut to open the current folder in Visual Studio Code.
 
+⚠️ Depending on your security preferences, you may have to explicitly give these applications permission to run. In the Applications folder, select the app and press Command + O (or File > Open) to manually open the application, then select Open in the following dialog. You will only have to do this once for each app.
+
 ⚠️ The first time you run each shortcut, you'll be asked to give permission for certain automation tasks. If you have concerns about security, feel free to inspect and compile your own copies from the provided scripts.
 
 ⚠️ Opening a folder in Visual Studio Code requires first installing Visual Studio Code's [shell command](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
