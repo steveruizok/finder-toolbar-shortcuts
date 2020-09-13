@@ -5,17 +5,17 @@
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
+	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>applet</string>
 	<key>CFBundleIconFile</key>
 	<string>applet</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.ScriptEditor.id.open-terminal</string>
+	<string>com.apple.ScriptEditor.id.Open-Finder-in-VSCode</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>open_terminal</string>
+	<string>Open Finder in VSCode</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -51,6 +51,8 @@
 	<string>This script needs access to Siri to run.</string>
 	<key>NSSystemAdministrationUsageDescription</key>
 	<string>This script needs access to administer this system to run.</string>
+	<key>SEDebugTellApplication</key>
+	<string>file:///System/Library/CoreServices/Finder.app/</string>
 	<key>WindowState</key>
 	<dict>
 		<key>bundleDividerCollapsed</key>
@@ -60,15 +62,15 @@
 		<key>dividerCollapsed</key>
 		<false/>
 		<key>eventLogLevel</key>
-		<integer>1</integer>
+		<integer>2</integer>
 		<key>name</key>
 		<string>ScriptWindowState</string>
 		<key>positionOfDivider</key>
-		<real>743</real>
+		<real>388</real>
 		<key>savedFrame</key>
-		<string>6 33 840 994 0 0 1680 1027 </string>
+		<string>1021 297 700 672 0 0 1920 1177 </string>
 		<key>selectedTab</key>
-		<string>log</string>
+		<string>description</string>
 	</dict>
 </dict>
 </plist>
