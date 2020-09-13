@@ -13,8 +13,11 @@ A collection of shortcuts for the Finder toolbar.
 
 ## Installation
 
-Download this repository, unzip and open the folder. In the folder, you'll find
-two applications:
+Download the
+[latest release](https://github.com/steveruizok/finder-toolbar-shortcuts/releases),
+unzip and open the folder.
+
+In the folder, you'll find two applications:
 
 - `Open Current Folder in Visual Studio Code.app`
 - `Open Current Folder in Terminal.app`.
