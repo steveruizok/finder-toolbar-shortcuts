@@ -12,4 +12,4 @@ set cd to POSIX path of currentDir
 log cd
 
 -- Open application
-do shell script "open -b '__APP__' '" & cd & "'"
+do shell script "open -b '__APP_ID__' '" & cd & "'"

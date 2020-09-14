@@ -2,11 +2,16 @@
 # format: name:app_to_open:icon
 # use: replace whitespaces on name for ^
 APPS = \
-	iTerm:com.googlecode.iterm2:terminal_icon \
-	Terminal:com.apple.terminal:terminal_icon \
-	Visual^Studio:com.microsoft.VSCode:editor_icon
+	iTerm:com.googlecode.iterm2:light-mode-terminal \
+	Terminal:com.apple.terminal:light-mode-terminal \
+	Visual^Studio:com.microsoft.VSCode:light-mode-editor
 
-# Macro to define apps from list
+# Macro to define apps
+#
+# It will generate a target like this:
+#   ./builds/Open\ Current\ Forlder\ in\ Terminal.app: com.apple.terminal ./icons/light-mode-terminal.icns
+#
+# args: (string with this form: name:app_to_open:icon)
 define TARGETS
 $(eval args = $(subst :, ,$1))
 $(eval cmd = ./builds/Open\ Current\ Folder\ in\ $(subst ^,\ ,$(word 1,${args})).app)
@@ -15,12 +20,13 @@ ids += $(word 2,${args})
 ${cmd}: $(word 2,${args}) ./icons/$(word 3,${args}).icns
 endef
 
+# Default task
 all: build
 
+# Generate apps targets
 apps =
 ids =
 $(foreach app,$(APPS),$(eval $(call TARGETS,${app})))
-
 build: $(apps)
 
 # Build icons from set
@@ -36,7 +42,7 @@ build: $(apps)
 %.app: src/main.applescript
 	@echo "building: $@"
 	@mkdir -p $(word 1,$(@D))
-	@cat "$<" | sed 's/__APP__/$(word 2,$^)/g' | osacompile -o "$@"
+	@cat "$<" | sed 's/__APP_ID__/$(word 2,$^)/g' | osacompile -o "$@"
 	@cp "$(word 3,$^)" "$@/Contents/Resources/applet.icns"
 
 clean:
