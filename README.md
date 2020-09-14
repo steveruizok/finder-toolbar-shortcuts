@@ -20,6 +20,7 @@ unzip and open the folder.
 In the folder, you'll find two applications:
 
 - `Open Current Folder in Visual Studio Code.app`
+- `Open Current Folder in iTerm.app`
 - `Open Current Folder in Terminal.app`.
 
 These apps are designed to be run from the Finder toolbar.
